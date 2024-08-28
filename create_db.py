@@ -108,10 +108,10 @@ for league_id in LEAGUE_IDS:
 
                 matches_data.append(match_info)
                 # Evitare di superare il limite di richieste all'API
-                time.sleep(2)
+                #time.sleep(2)
 
             # Evitare di superare il limite di richieste all'API
-            time.sleep(5)
+            time.sleep(1)
 
         except requests.exceptions.HTTPError as http_err:
             print(f"Errore HTTP per la lega {league_id} nella stagione {season}: {http_err}")
